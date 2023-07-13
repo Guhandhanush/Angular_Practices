@@ -1,0 +1,12 @@
+<div class="container mt-4  p-2">
+  <input
+    type="number"
+    class="form-control"
+    placeholder="Enter in rupees"
+    [(ngModel)]="inputValue"
+  />&nbsp;
+  <button (click)="usd()" class="btn btn-info">USD</button> &nbsp;
+  <button (click)="euro()" class="btn btn-info">Euro</button>
+
+  <h6 class="mt-2">{{inputValue}} Rupees is {{ convertedValue }}</h6>
+</div>

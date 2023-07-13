@@ -1,0 +1,26 @@
+<div class="container mt-4 p-3">
+  <div class="contain">
+    <h2 style="text-align: center;">BMI Calculator</h2>
+    <input
+      type="number"
+      placeholder="Enter Your Weight in kg"
+      class="form-control mt-2"
+      (input)="bmiConverter()"
+      [(ngModel)]="weight"
+    />
+    &nbsp;
+    <input
+      type="number"
+      placeholder="Enter Your height in meter"
+      class="form-control"
+      (input)="bmiConverter()"
+      [(ngModel)]="height"
+    />
+    &nbsp;
+    <br />
+    <button class="btn btn-dark mt-3" (click)="bmiConverter()">BMI</button>
+    <div class="result mt-4">
+      <p>Your BMI(Body Mass Index) is {{ bmiValue | slice:0:5}}</p>
+    </div>
+  </div>
+</div>

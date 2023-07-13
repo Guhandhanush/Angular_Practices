@@ -1,0 +1,77 @@
+<div class="container mt-5 p-3">
+  <div class="row">
+    <div class=" card col-md-3 p-4">
+      <h3 class="card-title" style="text-align: center;">{{dateTitle}}</h3>
+      <div class="card-body">
+        <h6 class="card-title">Default date without pipe</h6>
+        <p class="card-text">{{date}}</p>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Date with pipe date</h6>
+        <p class="card-text">{{date | date}}</p>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Date with pipe short date</h6>
+        <p class="card-text">{{date | date : 'short'}}</p>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Date with pipe medium date</h6>
+        <p class="card-text">{{date | date : 'medium'}}</p>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Date with pipe long date</h6>
+        <p class="card-text">{{date | date : 'long'}}</p>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Date with pipe custom date</h6>
+        <p class="card-text">{{date | date : 'dd-mm-yyyy'}}</p>
+      </div>
+    </div>
+    <div class=" card col-md-3 p-4">
+      <h3 class="card-title" style="text-align: center;">{{currencyTitle}}</h3>
+      <div class="card-body">
+        <h6 class="card-title">Default number without pipe</h6>
+        <p class="card-text">{{currency}}</p>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Default number with pipe</h6>
+        <p class="card-text">{{currency | currency}}</p>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Number with currency pipe</h6>
+        <p class="card-text">{{currency | currency : 'INR'}}</p>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Number with pipe</h6>
+        <p class="card-text">{{currency | currency : 'EUR' : 'code'}}</p>
+      </div>
+    </div>
+    <div class="card col-sm-3">
+      <h3 class="card-title" style="text-align: center;">Text Pipes</h3>
+      <div class="card-body">
+        <h6 class="card-title">Default text</h6>
+        <p class="card-text">{{text}}</p>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Uppercase Pipe </h6>
+        <p class="card-text">{{text | uppercase}}</p>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Lowercase Pipe </h6>
+        <p class="card-text">{{text | lowercase}}</p>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Titlecase Pipe </h6>
+        <p class="card-text">{{text | titlecase}}</p>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Slice Pipe </h6>
+        <p class="card-text">{{text | slice : 0:7}}</p>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Slice Pipe </h6>
+        <p class="card-text">{{text | slice : 0:1}}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container mt-5  p-3 gap">
+  <h3>Todo Application</h3>
+
+  <p>Number of TODO to complete : {{taskgroup.length}}</p>
+  <div class="input">
+    <input class="form-control" type="text" [(ngModel)]="task" />
+    <button class="btn btn-success" (click)="addtask()">+</button>
+  </div>
+
+  <div class="lists">
+    <ul *ngFor="let task of taskgroup" >
+      <h6>{{ task }}</h6>
+      <button class="btn btn-danger" (click)="deleteTask(task)">Del</button>
+    </ul>
+  </div>
+</div>

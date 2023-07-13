@@ -1,0 +1,14 @@
+<div class="container mt-4 p-4">
+  <h3>Student Information</h3>
+  <div class="input">
+    <input type="text" class="form-control" [(ngModel)]="id" placeholder="Enter student id">
+    <button class="btn btn-success mt-2" (click)="studentDetails()">Search</button>
+  </div>
+  <div class="output col-md-5 p-2">
+    <h2 class="card-title">Student Details</h2>
+    <p class="card-title">Student id      : {{student.id}}</p>
+    <p class="card-title">Student name    : {{student.name}}</p>
+    <p class="card-title">Student age     : {{student.age}}</p>
+    <p class="card-title">Student country : {{student.country}}</p>
+  </div>
+</div>

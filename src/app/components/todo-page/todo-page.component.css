@@ -1,0 +1,23 @@
+input {
+  max-width: 50%;
+  display: inline;
+}
+
+.btn-success {
+  margin-left: 20px;
+}
+
+.lists h5{
+  display: inline;
+  max-width: 250px;
+}
+
+.btn-danger{
+  margin-left: 20px;
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
